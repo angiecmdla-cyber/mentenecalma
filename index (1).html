@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#FFF9F5">
+  <meta name="description" content="Un espacio educativo e interactivo para observar lo que sentís y practicar herramientas sencillas.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>Aprende a Manejar la Ansiedad</title>
+</head>
+<body>
+  <div id="app">
+    <section id="welcome" class="screen welcome-screen">
+      <div class="welcome-card">
+        <div class="logo-mark">♡</div>
+        <p class="eyebrow">UN ESPACIO PARA VOS</p>
+        <h1>Bienvenida a un espacio para entender tu ansiedad 💗</h1>
+        <p class="lead">Tomate unos minutos para observar cómo te sentís, identificar qué está ocupando tu mente y encontrar una herramienta que puedas utilizar ahora.</p>
+        <button class="primary full" data-action="start">Empezar</button>
+        <p class="disclaimer">Esta herramienta tiene fines educativos y de acompañamiento. No reemplaza la atención de profesionales de la salud.</p>
+      </div>
+    </section>
+
+    <main id="main" class="hidden">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">APRENDE A MANEJAR LA ANSIEDAD</p>
+          <h2 id="page-title">Hola 💗</h2>
+        </div>
+        <button class="icon-btn" data-action="open-privacy" aria-label="Privacidad">♡</button>
+      </header>
+
+      <div id="content" class="content"></div>
+
+      <nav class="bottom-nav" aria-label="Navegación principal">
+        <button data-nav="home">⌂<span>Inicio</span></button>
+        <button data-nav="feel">♡<span>¿Cómo me siento?</span></button>
+        <button data-nav="tools">✦<span>Herramientas</span></button>
+        <button data-nav="progress">◌<span>Mi progreso</span></button>
+      </nav>
+    </main>
+
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true"></div>
+    <div id="toast" class="toast" aria-live="polite"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
